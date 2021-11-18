@@ -1,0 +1,6 @@
+configuration {
+//	theme: "/usr/share/rofi/themes/DarkBlue.rasi";
+	theme: "purple";
+}
+// @import "vgconf"
+// @theme "vgtheme"
