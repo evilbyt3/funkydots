@@ -1,0 +1,3 @@
+[submodule ".local/share/init_install/alis"]
+	path = .local/share/init_install/alis
+	url = git@github.com:vlagh3/alis.git
