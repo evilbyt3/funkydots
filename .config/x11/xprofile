@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# This file runs when a DM logs you into a graphical session.
+# If you use startx/xinit like a Chad, this file will also be sourced.
+setbg.sh &              # set the background
+#poly-launch.sh &        # launch the statusbar
+
+autostart = "mpd xcompmgr dunst unclutter pipewire"
+for program in $autostart; do
+  pidof -s "$program" || setssid -f "$program"
+done >/dev/null 2>&1
