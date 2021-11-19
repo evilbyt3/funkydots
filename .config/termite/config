@@ -1,0 +1,62 @@
+[options]
+allow_bold 	        = true
+bold_is_bright 		= true
+clickable_url		= true
+dynamic_title		= true
+hyperlinks	        = true
+filter_unmatched_urls 	= true
+
+font = DejaVu Sans Mono 8
+font = Terminus 11px
+font = Iosevka 11px
+font = ProggyCleanTTSZ Nerd Font 13
+
+scrollback_lines = 10000
+cursor_blink 	 = system
+cursor_shape 	 = block
+scrollbar        = off
+
+[hints]
+padding 	= 4
+roundness 	= 7.0
+
+
+[colors]
+background 		= rgba(63, 63, 63, 0.5)
+cursor 			= #305f71
+cursor_foreground 	= #ffffff
+foreground 		= #9fa9b5
+background 		= #0f0a14
+highlight 		= #116666
+
+#: black
+color0 = #1c0c18
+color8 = #1a1e31
+
+#: red
+color1 = #9a2d44
+color9 = #ac3951
+
+#: green
+color2 = #2a5b6f
+color10 = #67808c
+
+#: yellow
+color3 = #ce4b6d
+color11 = #ce4b6d
+
+#: blue
+color4 = #3e3a4d
+color12 = #685589
+
+#: magenta
+color5 = #7d314e
+color13 = #9f3f63
+
+#: cyan
+color6 = #164569
+color14 = #38718d
+
+#: white
+color7 = #d4b9d7
+color15 = #fbdeff
