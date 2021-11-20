@@ -6,7 +6,7 @@
 ### OPTIONS AND VARIABLES ###
 
 while getopts ":a:r:b:p:h" o; do case "${o}" in
-  h) printf "Optional arguments for custom use:\\n  -r: Dotfiles repository (local file or url)\\n  -p: Dependencies and programs csv (local file or url)\\n  -a: AUR helper (must have pacman-like syntax)\\n  -h: Show this message\\n" && exit 1 ;;
+  h) printf "Optional arguments for custom use:\\n  -r: Dotfiles repository (local file or url)\\n  -p: Dependencies and programs csv (local file or url)\\n  -a: AUR helper (must have pacman-like syntax)\\n  -h: Show this message\\n -b: repository branch\\n" && exit 1 ;;
   r) dotfilesrepo=${OPTARG} && git ls-remote "$dotfilesrepo" || exit 1 ;;
   b) repobranch=${OPTARG} ;;
   p) progsfile=${OPTARG} ;;
@@ -150,7 +150,7 @@ installationloop() {
 
 putgitrepo() { # Downloads a gitrepo $1 and places the files in $2 only overwriting conflicts
   dialog --infobox "Downloading and installing config files..." 4 60
-  [ -z "$3" ] && branch="master" || branch="$repobranch"
+  [ -z "$3" ] && branch="main" || branch="$repobranch"
   dir=$(mktemp -d)
   [ ! -d "$2" ] && mkdir -p "$2"
   chown "$name":wheel "$dir" "$2"
