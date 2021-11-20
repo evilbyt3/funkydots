@@ -48,6 +48,8 @@
 ,socat,"is a utility which establishes two byte streams and transfers data between them."
 ,moreutils,"is a collection of useful unix tools."
 ,ruby,"dynamic, interpreted programming language with a focus on simplicity"
+,ripgrep,"better grep"
+,node,"nodejs"
 A,picom-ibhagwan-git,"X compositor fork with dual_kawasee blur & rounded corners"
 A,termite,"terminal emulator"
 A,zsh-fast-syntax-highlighting-git,"provides syntax highlighting in the shell."

@@ -16,3 +16,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH:-$HOME/
 
 # Install tmux plugin manager
 git clone https://github.com/tmux-plugins/tpm "${XDG_DATA_HOME:-$HOME/.local/share}/tmux/tpm"
+
+# nvchad init
+nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
