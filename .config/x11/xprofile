@@ -5,7 +5,7 @@
 setbg.sh &              # set the background
 #poly-launch.sh &        # launch the statusbar
 
-autostart = "mpd xcompmgr dunst unclutter pipewire"
+autostart = "mpd picom dunst unclutter pipewire"
 for program in $autostart; do
   pidof -s "$program" || setssid -f "$program"
 done >/dev/null 2>&1
