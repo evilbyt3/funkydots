@@ -51,6 +51,8 @@
 ,ripgrep,"better grep"
 ,node,"nodejs"
 ,alacritty,"terminal emulator"
+,xorg-xsetroot,"utility to set your root window background to a given pattern or color"
+,rofi,"window switcher & application launcher"
 A,picom-ibhagwan-git,"X compositor fork with dual_kawasee blur & rounded corners"
 A,zsh-fast-syntax-highlighting-git,"provides syntax highlighting in the shell."
 A,lf-git,"is an extensive terminal file manager that everyone likes."
