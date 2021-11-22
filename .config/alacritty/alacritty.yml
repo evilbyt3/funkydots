@@ -591,6 +591,40 @@ schemes:
       cyan:    '#38718d'
       white:   '#fbdeff'
 
+  ### Uwu ###
+  uwu: &uwu
+    # Default colors
+    primary:
+      background: '0x131A1C'
+      foreground: '0xC5C8C9'
+
+    # Colors the cursor will use if `custom_cursor_colors` is true
+    cursor:
+      text: '0xd6d6d6'
+      cursor: '0x232a2c'
+
+    # Normal colors
+    normal:
+      black:   '0x1b2224'
+      red:     '0xe74c4c'
+      green:   '0x6bb05d'
+      yellow:  '0xe59e67'
+      blue:    '0x53A7BF'
+      magenta: '0xef7cbb'
+      cyan:    '0x51a39f'
+      white:   '0xc4c4c4'
+
+    # Bright colors
+    bright:
+      black:   '0x232a2c'
+      red:     '0xc26f6f'
+      green:   '0x8dc776'
+      yellow:  '0xe7ac7e'
+      blue:    '0x6CBAD1'
+      magenta: '0xd3869b'
+      cyan:    '0x6db0ad'
+      white:   '0xbfbfbf'
+
 ######################################################################
 ## SET THEME: Choose ONE color scheme from those in the above list. ##
 ## ###################################################################
@@ -606,8 +640,9 @@ schemes:
 # *solarized-dark
 # *tomorrow-night
 # *cyber
+# *uwu
 
-colors: *cyber
+colors: *uwu
 
 #######################################
 ##       END OF COLOR SCHEMES        ##
