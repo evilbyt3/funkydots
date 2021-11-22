@@ -19,3 +19,11 @@ git clone https://github.com/tmux-plugins/tpm "${XDG_DATA_HOME:-$HOME/.local/sha
 
 # nvchad init
 nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
+
+# Install rustup 4 eww
+# curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+# rustup install nightly
+
+# eww
+# git clone https://github.com/elkowar/eww && cd eww && cargo build --release && cp target/releases/eww ~/.local/bin/system/
+
