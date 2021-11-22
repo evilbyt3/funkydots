@@ -3,6 +3,7 @@
 # This file runs when a DM logs you into a graphical session.
 # If you use startx/xinit like a Chad, this file will also be sourced.
 setbg.sh &              # set the background
+bar.sh &                # lunch statusbar (dwm)
 #poly-launch.sh &        # launch the statusbar
 
 autostart = "mpd picom dunst unclutter pipewire"

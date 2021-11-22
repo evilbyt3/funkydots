@@ -14,7 +14,7 @@ else
 fi
 
 # i3
-exec i3
+# exec i3
 
 # dwm
-#ssh-agent dwm
+ssh-agent dwm
