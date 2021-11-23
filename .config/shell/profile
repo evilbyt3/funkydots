@@ -26,6 +26,7 @@ unsetopt PROMPT_SP
 # Default programs:
 export EDITOR="nvim"
 export TERMINAL="alacritty"
+export TERM="alacritty"
 export BROWSER="brave"
 export READER="zathura"
 export PAGER="most"
