@@ -130,5 +130,5 @@ zle -N accept-line expand-alias-and-accept-line
 # eval "$(pyenv init -)"
 
 # BlinG
-# pfetch
+pfetch
 zwaves.sh
