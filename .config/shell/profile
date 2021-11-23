@@ -26,10 +26,14 @@ unsetopt PROMPT_SP
 # Default programs:
 export EDITOR="nvim"
 export TERMINAL="alacritty"
-export TERM="alacritty"
 export BROWSER="brave"
 export READER="zathura"
 export PAGER="most"
+
+# for fonts (e.g powerline)
+export LC_ALL=en_US.UTF-8
+export LANG=en_IN.UTF-8
+
 
 # ~/ Clean-up:
 export XDG_CONFIG_HOME="$HOME/.config"
