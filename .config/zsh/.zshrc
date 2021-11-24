@@ -27,6 +27,9 @@ setopt EXTENDED_HISTORY  # record command start time
 setopt HIST_IGNORE_SPACE
 alias jrnl=" jrnl"
 
+# gpg agent
+GPG_TTY=$(tty)
+export GPG_TTY
 
 # -- OH_MY_ZSH --
 ZSH_THEME="agnoster" # TODO: shorten path segment in this theme
