@@ -1,6 +1,6 @@
 ncmpcpp_directory = "~/.config/ncmpcpp"
 lyrics_directory = "~/.local/share/lyrics"
-mpd_music_dir = "~/other/muz"
+mpd_music_dir = "~/res/muz"
 message_delay_time = "1"
 visualizer_data_source = "/tmp/mpd.fifo"
 visualizer_output_name = "Visualizer feed"
