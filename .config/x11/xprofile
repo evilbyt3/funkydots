@@ -6,7 +6,7 @@ setbg.sh &              # set the background
 bar.sh &                # lunch statusbar (dwm)
 #poly-launch.sh &        # launch the statusbar
 
-autostart = "mpd picom dunst unclutter pipewire"
+autostart="mpd picom dunst unclutter pipewire"
 for program in $autostart; do
   pidof -s "$program" || setsid -f "$program"
 done >/dev/null 2>&1
