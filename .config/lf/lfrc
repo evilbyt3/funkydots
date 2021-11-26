@@ -18,7 +18,7 @@ set info size:time
 # -- keybinds -- #
 
 map <enter> shell 		# use enter for shell cmds
-map se					# override this
+map se				# override this
 
 # basic operations
 map D delete
@@ -29,7 +29,7 @@ map M moveto
 map z $$READER "$f"
 map b $$BROWSER "$f"
 map e $$EDITOR "$f"
-map x $$f				# execute
+map x $$f		        # execute
 map HI set hidden!		# toggle hidden files on/off
 
 # movement
@@ -40,6 +40,7 @@ map gP cd ~/proj
 map gR cd ~/res
 map gH cd ~/arh
 map gC cd ~/.config
+map gL cd ~/.local
 map gS cd ~/.local/bin
 map gls cd ~/.local/share
 map gcac cd ~/.cache
