@@ -1,0 +1,11 @@
+# dev layout
+#
+# 0 lf  -- file manager
+# 1 git -- lazygit
+# 3 sh  -- other
+
+renamew "lf"
+send "lf" Enter
+split-window -v -p 30
+neww -n "git" "lazygit"
+selectw -t "lf"
