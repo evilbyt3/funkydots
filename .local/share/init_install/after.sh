@@ -27,3 +27,5 @@ nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
 # eww
 # git clone https://github.com/elkowar/eww && cd eww && cargo build --release && cp target/releases/eww ~/.local/bin/system/
 
+# Cleanup
+[ -f "$HOME/larbs.sh" ] && rm $HOME/larbs.sh
