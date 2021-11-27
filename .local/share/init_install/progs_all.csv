@@ -31,7 +31,6 @@
 ,gocryptfs,"an encrypted overlay filesystem written in Go"
 ,firefox,"we browser"
 ,newsboat,"is a terminal RSS client."
-,brave-browser,"is an elegant web 3.0 browser with built-in adblocking, tor and other features."
 ,noto-fonts-emoji,"is an emoji font."
 ,ntfs-3g,"allows accessing NTFS partitions."
 ,pipewire,"is the audio system."
@@ -81,7 +80,9 @@
 ,dnsutils,"some networking tools (e.g dig)"
 ,conky,"system monitoring utility"
 ,rofi-emoji,"emoji selector plugin for Rofi that copies the selected emoji to the clipboard"
+,pfetch,"terminallarbs.sh
 A,nerd-fonts-complete,"nerd fonts"
+A,brave-bin,"is an elegant web 3.0 browser with built-in adblocking, tor and other features."
 A,ttf-font-awesome,"for icons"
 A,sc-im,"a spreadsheet program based on SC"
 A,glow,"render markdown in the terminal"
