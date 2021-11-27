@@ -5,7 +5,7 @@ configuration{
     font: "Iosevka 12";
     show-icons: true;
     icon-theme: "Oranchelo";
-    terminal: "st";
+    terminal: "alacritty";
     drun-display-format: "{icon} {name}";
     display-drun: "  ";
     location: 0;
