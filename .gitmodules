@@ -1,9 +1,0 @@
-[submodule ".local/share/init_install/alis"]
-	path = .local/share/init_install/alis
-	url = https://github.com/vlagh3/alis.git
-[submodule ".local/bin"]
-	path = .local/bin
-	url = https://github.com/vlagh3/scripties.git
-[submodule ".config/nvim"]
-	path = .config/nvim
-	url = https://github.com/vlagh3/NvChad.git
