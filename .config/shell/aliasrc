@@ -1,0 +1,96 @@
+#!/bin/bash
+
+# Use neovim for vim if present.
+[ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
+
+# Verbosity and settings that you pretty much just always are going to want.
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+	mkd="mkdir -pv" \
+	ffmpeg="ffmpeg -hide_banner" \
+	#v="nvim" \
+
+# Colorize commands when possible.
+# ls="ls -hN --color=auto --group-directories-first" \
+alias \
+	ls="colorls --sd" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" 
+	# ccat="highlight --out-format=ansi" 
+
+
+# Set mocp theme
+alias mocp="mocp -T nightly_theme"
+
+# -- Abbreviations --
+# These common commands are just too long! Abbreviate them.
+
+# system
+abbrev-alias ka="killall"
+abbrev-alias sv="sudo nvim" 
+abbrev-alias SS="sudo systemctl" 
+abbrev-alias sm="sudo mount" 
+abbrev-alias smu="sudo umount" 
+abbrev-alias shd="shred -zfu -n" 
+abbrev-alias sdn="sudo shutdown -h now" 
+abbrev-alias v="$EDITOR" 
+abbrev-alias sps="sudo pacman -S" 
+abbrev-alias spu="sudo pacman -Syu && yay" 
+abbrev-alias spr="sudo pacman -Rns" 
+abbrev-alias ys="yay -S" 
+abbrev-alias yr="yay -Rns" 
+abbrev-alias spi="pip install -U $USER" 
+
+# git
+abbrev-alias g="git" 
+abbrev-alias gs="git status" 
+abbrev-alias gm="git commit -m '" 
+abbrev-alias gc="git clone" 
+abbrev-alias ga="git add" 
+abbrev-alias gp="git push" 
+
+# dotfiles bare repo
+alias dtf='/usr/bin/git --git-dir=$HOME/.dtf/ --work-tree=$HOME'
+
+
+# other
+abbrev-alias z="zathura" 
+abbrev-alias weath="curl wttr.in"
+abbrev-alias j="jrnl"
+alias mirr="wget -mkEpnp "
+
+## tasks
+### inbox stuff
+alias in="task add +in"
+tickle () {
+    deadline=$1
+    shift
+    in +tickle wait:$deadline $@
+}
+webpage_title(){
+	wget -qO- "$*" | hxnormalize -x | hxselect -s '\n' 'title' | sed 's/<\/\?[^>]\+>//g' 2>/dev/null
+}
+read_and_review (){
+	link="$1"
+	title=$(webpage_title $link)
+	echo $title
+	descr="\"Read and review: $title\""
+	# TODO: Maybe get current context & do pro:$con.reading
+	id=$(task add +rnr "$descr" | sed -n 's/Created task \(.*\)./\1/p')
+	task "$id" annotate "$link" "${@:2}"
+}
+think_it_over () {
+	task "$1" mod +tickle wait:$2
+}
+
+
+alias tick=tickle
+alias rnr=read_and_review
+alias think=think_it_over
+
+
+### fast but not furious
+abbrev-alias t="task"
+abbrev-alias tp="task projects"

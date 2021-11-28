@@ -1,0 +1,58 @@
+# 
+#     ------------
+#    \ news/sysmon \
+# +----------+----------+
+# |          |          |
+# | newsboat |  bashtop |
+# |          |          |
+# +----------+----------+
+neww -n 'mon'
+send-keys -t 'mon' 'newsboat' Enter
+split-window -h -p 60
+send-keys -t 'mon' 'bashtop' Enter
+
+#    -----------
+#   \ music pane \
+# +-----------------+
+# |                 |
+# |     ncmpcpp     |
+# |                 |
+# | --------------- |
+# |   ncmpcpp vis   |
+# +-----------------+
+new-window -t scratchpad:2 -n "muz"
+send-keys -t "muz" "ncmpcpp" Enter 1
+split-window -t "muz" -v -p 35
+send-keys -t "muz" "clear; ncmpcpp" Enter v
+
+#          ---------------
+#         \ tasks (layout) \
+# +-----------------+------------------+
+# |                 | t next @ context |
+# | calendar + wait | ---------------- |
+# |                 | inbox @ context  |
+# | --------------- | ---------------  |
+# |     habits      | burndown.daily   |
+# +-----------------+------------------+
+
+new-window -t scratchpad:3 -n "tasks"
+# next tasks @ context
+splitw -t "tasks" -h -l 40%
+send-keys -t "tasks" "while true; do clear && task due:tomorrow limit:4; sleep 3; done" Enter
+
+# inbox based on context
+splitw -t "tasks" -v -l 75%
+send-keys -t "tasks" "while true; do clear && task +in lim:4; sleep 3; done" Enter
+
+# burndown.daily report
+splitw -t "tasks" -v -l 60%
+send-keys -t "tasks" "while true; do clear && task burndown.daily; sleep 3; done" Enter
+
+# back to left (calendar + waiting)
+send-keys -t "tasks.0" "task calendar && task +next -in lim:5" Enter
+
+# habits
+select-pane -t "tasks.0"
+splitw -v -l 45%
+send-keys  "dijo" Enter
+#send-keys  "while true; do clear; figlet 'habits'; task +habit -in lim:10; sleep 10; done" Enter

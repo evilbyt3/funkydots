@@ -1,0 +1,6 @@
+bin: config
+include: config
+.config: config
+.dotfiles: config
+.ssh: config
+.surf: config

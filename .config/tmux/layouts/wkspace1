@@ -1,0 +1,16 @@
+# layout
+# 
+# 0 pi      -- connection to your LAN pi
+# 1 vm      -- vm server
+# 2 conf    -- tmux ~/.config
+# 3 scripts -- tmux ~/.local/bin
+# 4 wspace  -- workspace for other stuff
+
+rename "wkspace1"
+renamew "pi"
+send "ssh pi" Enter
+neww -n "vm" "ssh broc"
+neww -n "conf" -c ~/.config
+neww -n "scripts" -c ~/.local/bin
+neww -n "wspace"
+selectw -t "wspace"
