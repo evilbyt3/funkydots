@@ -11,6 +11,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # Remove .zshrc if existent
 [ -f "$HOME/.zshrc" ] && rm $HOME/.zshrc
 
+
 # Install required plugins (syntax highlighting)
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH:-$HOME/.local/share/oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
