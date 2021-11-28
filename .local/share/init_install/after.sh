@@ -1,5 +1,25 @@
 #/bin/bash
 
+putgitbarerepo() { # Initialize git bare repo for dotfiles
+  git clone --bare "$1" $HOME/.dtf
+  function config {
+     /usr/bin/git --git-dir=$HOME/.dtf/ --work-tree=$HOME $@
+  }
+  mkdir -p .config-backup
+  config checkout
+  if [ $? = 0 ]; then
+    echo "Checked out config.";
+    else
+      echo "Backing up pre-existing dot files.";
+      config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .config-backup/
+  fi;
+  config checkout
+  config config status.showUntrackedFiles no
+}
+
+dotfilesrepo="$1"
+[ -z "$dotfilesrepo" ] && dotfilesrepo="https://github.com/vlagh3/funkydots"
+
 # Set the ZSH env if it's not already set
 if [ -z ${ZSH} ]; then
     export ZSH="${XDG_CONFIG_HOME:-$HOME/.local/share}/oh_my_zsh"
@@ -11,6 +31,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # Remove .zshrc if existent
 [ -f "$HOME/.zshrc" ] && rm $HOME/.zshrc
 
+# Setup bare repo
+putgitbarerepo "$dotfilesrepo"
 
 # Install required plugins (syntax highlighting)
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH:-$HOME/.local/share/oh-my-zsh/custom}/plugins/zsh-syntax-highlighting

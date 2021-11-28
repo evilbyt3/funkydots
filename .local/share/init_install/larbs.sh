@@ -158,23 +158,6 @@ putgitrepo() { # Downloads a gitrepo $1 and places the files in $2 only overwrit
   sudo -u "$name" cp -rfT "$dir" "$2"
 }
 
-putgitbarerepo() { # Initialize git bare repo for dotfiles
-  git clone --bare "$1" $HOME/.dtf
-  function config {
-     /usr/bin/git --git-dir=$HOME/.dtf/ --work-tree=$HOME $@
-  }
-  mkdir -p .config-backup
-  config checkout
-  if [ $? = 0 ]; then
-    echo "Checked out config.";
-    else
-      echo "Backing up pre-existing dot files.";
-      config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .config-backup/
-  fi;
-  config checkout
-  config config status.showUntrackedFiles no
-}
-
 
 systembeepoff() { 
   dialog --infobox "Getting rid of that retarded error beep sound..." 10 50
@@ -251,9 +234,6 @@ rm -f "/home/$name/README.md" "/home/$name/LICENSE" "/home/$name/FUNDING.yml"
 
 # make git ignore deleted LICENSE & README.md files
 git update-index --assume-unchanged "/home/$name/README.md" "/home/$name/LICENSE" "/home/$name/FUNDING.yml"
-
-# Init bare repository
-putgitbarerepo "$dotfilesrepo"
 
 # Most important command! Get rid of the beep!
 systembeepoff
