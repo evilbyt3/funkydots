@@ -53,7 +53,10 @@ abbrev-alias gp="git push"
 
 # dotfiles bare repo
 alias dtf='/usr/bin/git --git-dir=$HOME/.dtf/ --work-tree=$HOME'
-
+abbrev-alias ds="dtf status"
+abbrev-alias dm="dtf commit -m '"
+abbrev-alias da="dtf add"
+abbrev-alias dp="dtf push"
 
 # other
 abbrev-alias z="zathura" 
