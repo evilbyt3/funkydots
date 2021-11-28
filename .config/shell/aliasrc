@@ -51,6 +51,10 @@ abbrev-alias gc="git clone"
 abbrev-alias ga="git add" 
 abbrev-alias gp="git push" 
 
+# dotfiles bare repo
+alias dtf='/usr/bin/git --git-dir=$HOME/.dtf/ --work-tree=$HOME'
+
+
 # other
 abbrev-alias z="zathura" 
 abbrev-alias weath="curl wttr.in"
