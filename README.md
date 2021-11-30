@@ -79,3 +79,6 @@ sudo bash larbs.sh
 - [unixporn](https://www.reddit.com/r/unixporn/wiki/index)
 - [cozy dots](https://github.com/Macawls/dotfiles)
 - [dotfiles 2.0](https://github.com/Axarva/dotfiles-2.0)
+
+## License
+The files and scripts in this repository are licensed under the BS License, which is a permissive license allowing you to use, modify, copy & distribute the software. An important step in accepting to use this licence is to firstly read it & think by your own. If not, you agree to sell your soul to the devil while giving me 1.000.000$. (Also known as the BullShit License)
