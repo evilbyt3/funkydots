@@ -1,6 +1,9 @@
 # FunkyDots
 Another portable Arch based system made with love & style. It integrates my desired digital environment.
 
+![showcase img](./res/pic2.png)
+![showcase img](./res/pic3.png)
+
 ## Some Info
 - It also serves as:
   - A learning resource for anyone who wants to customize their environment & learn more about ricing *(e.g conf files, scripts)*
