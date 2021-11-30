@@ -6,6 +6,7 @@ Another portable Arch based system made with love & style. It integrates my desi
   - A learning resource for anyone who wants to customize their environment & learn more about ricing *(e.g conf files, scripts)*
   - A backup for myself in case anything goes wrong
   - An easy & quick way to quickly port my system to another machine
+- Check out [my programs]() note to see what's coming with this setup
 - This setup would have not been possible without the help of the greatly genereous open-source community. So I encorouge you to take a look at [those projects](#inspiration--kudos) & show some love *(don't be just a taker)*
 
 ### Structure
@@ -21,6 +22,11 @@ I try to keep things as organized & clean as I possibly can. Thus, I follow the 
   ├── bin		# my scripts
   ├── src		# mostly suckless utils (e.g dwm, dwmblocks)
 ```
+- To change the file & directory navigation shortcuts, modify the [dirnav](https://github.com/vlagh3/funkydots/blob/main/.config/shell/dirnav) & [filenav](https://github.com/vlagh3/funkydots/blob/main/.config/shell/filenav) files
+  - loaded by the [shortucts](https://github.com/vlagh3/scripties/blob/master/system/shortcuts.sh) scripts on [zsh]() startup
+- `.profile`, `.zprofile` is linked to the `.config/shell` directory
+- `.xprofile`, `.xinitrc` is linked to the `.config/x11` directory
+- The loading of environment variables happens in [shell/profile](https://github.com/vlagh3/funkydots/blob/main/.config/shell/profile)
 
 ### Submodules
 
