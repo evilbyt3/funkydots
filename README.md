@@ -45,7 +45,7 @@ There are multiple ways to manage your dotfiles as seen in numerous articles. I 
 - https://stackoverflow.com/questions/16292409/how-to-use-github-to-manage-dotfiles
 - [Ask HN: What do you use to manage dotfiles?](https://news.ycombinator.com/item?id=11070797)
 
-I personally use a [git bare](https://www.keblog.me/2015/01/bare-git-repository/) repository as a result of reading an [awesome article](https://www.atlassian.com/git/tutorials/dotfiles) + it integrates better with my [[#Submodules]] & overall workflow. I find it scalable, flexible & pretty easy to use once you get the gist of it. However, it has some downsides as well *(as everything I suppose)*
+I personally use a [git bare](https://www.keblog.me/2015/01/bare-git-repository/) repository as a result of reading an [awesome article](https://www.atlassian.com/git/tutorials/dotfiles) + it integrates better with my [Submodules](#submodules) & overall workflow. I find it scalable, flexible & pretty easy to use once you get the gist of it. However, it has some downsides as well *(as everything I suppose)*
 
 ## Install
 To get yourself setup
@@ -68,6 +68,7 @@ sudo bash larbs.sh
 - if you want a minimal install change pass the `-p` option to [larbs](https://larbs.xyz/) with the [progs_min.csv file](https://github.com/vlagh3/funkydots/blob/main/.local/share/init_install/progs_min.csv) or your custom one
 
 ## Inspiration & Kudos
+Grazie
 - [OneDark](https://github.com/Mangeshrex/dotfiles)
 - [DTOS](https://gitlab.com/dwt1/dtos)
 - [larbs](https://github.com/LukeSmithxyz/LARBS)
@@ -79,6 +80,19 @@ sudo bash larbs.sh
 - [unixporn](https://www.reddit.com/r/unixporn/wiki/index)
 - [cozy dots](https://github.com/Macawls/dotfiles)
 - [dotfiles 2.0](https://github.com/Axarva/dotfiles-2.0)
+- The community
+
+## Contributions & Support
+
+- **Do you have a suggestion or fix?**
+  - feel free to open up a [pull request](https://github.com/vlagh3/funkydots/pulls)
+
+- **Having an issue, problem, error?**
+  - Don't be shy & open an [issue](https://github.com/vlagh3/funkydots/issues) or ping me
+  - "The important thing is not to stop questioning. Curiosity has its own reason for existing."
+    - however that doen't mean you should not read the effin manual
+
+
 
 ## License
 The files and scripts in this repository are licensed under the BS License, which is a permissive license allowing you to use, modify, copy & distribute the software. An important step in accepting to use this licence is to firstly read it & think by your own. If not, you agree to sell your soul to the devil while giving me 1.000.000$. (Also known as the BullShit License)
