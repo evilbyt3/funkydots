@@ -6,7 +6,7 @@ Another portable Arch based system made with love & style. It integrates my desi
   - A learning resource for anyone who wants to customize their environment & learn more about ricing *(e.g conf files, scripts)*
   - A backup for myself in case anything goes wrong
   - An easy & quick way to quickly port my system to another machine
-- This setup would have not been possible without the help of the greatly genereous open-source community. So I encorouge you to take a look at those projects & show some love *(don't be just a taker)*
+- This setup would have not been possible without the help of the greatly genereous open-source community. So I encorouge you to take a look at [those projects](#inspiration--kudos) & show some love *(don't be just a taker)*
 
 ### Structure
 I try to keep things as organized & clean as I possibly can. Thus, I follow the [XDG Base Directory Specification](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html) to structure my `~` directory. Below is a summary:
@@ -62,14 +62,14 @@ sudo bash larbs.sh
 - if you want a minimal install change pass the `-p` option to [larbs](https://larbs.xyz/) with the [progs_min.csv file](https://github.com/vlagh3/funkydots/blob/main/.local/share/init_install/progs_min.csv) or your custom one
 
 ## Inspiration & Kudos
-[OneDark](https://github.com/Mangeshrex/dotfiles)
-[DTOS](https://gitlab.com/dwt1/dtos)
-[larbs](https://github.com/LukeSmithxyz/LARBS)
-[chadwm](https://github.com/siduck/chadwm)
-[alis](https://github.com/picodotdev/alis)
-[NVchad](https://nvchad.github.io/)
-[dawn](https://github.com/b-coimbra/dawn)
-[voidrice](https://github.com/LukeSmithxyz/voidrice)
-[unixporn](https://www.reddit.com/r/unixporn/wiki/index)
-[cozy dots](https://github.com/Macawls/dotfiles)
-[dotfiles 2.0](https://github.com/Axarva/dotfiles-2.0)
+- [OneDark](https://github.com/Mangeshrex/dotfiles)
+- [DTOS](https://gitlab.com/dwt1/dtos)
+- [larbs](https://github.com/LukeSmithxyz/LARBS)
+- [chadwm](https://github.com/siduck/chadwm)
+- [alis](https://github.com/picodotdev/alis)
+- [NVchad](https://nvchad.github.io/)
+- [dawn](https://github.com/b-coimbra/dawn)
+- [voidrice](https://github.com/LukeSmithxyz/voidrice)
+- [unixporn](https://www.reddit.com/r/unixporn/wiki/index)
+- [cozy dots](https://github.com/Macawls/dotfiles)
+- [dotfiles 2.0](https://github.com/Axarva/dotfiles-2.0)
