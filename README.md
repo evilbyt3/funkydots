@@ -90,7 +90,7 @@ Grazie
 - **Having an issue, problem, error?**
   - Don't be shy & open an [issue](https://github.com/vlagh3/funkydots/issues) or ping me
   - "The important thing is not to stop questioning. Curiosity has its own reason for existing."
-    - however that doen't mean you should not read the effin manual
+    - however that doesn't mean you should not read the effin manual
 
 
 
