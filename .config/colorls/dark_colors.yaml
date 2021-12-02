@@ -1,44 +1,45 @@
 # Main Colors
-unrecognized_file: darkred
-recognized_file:   limegreen
-dir:               red
+unrecognized_file: '#e7ac7e' # Orange
+recognized_file:   '#53a7bf' # Blue
+executable_file:   '#6bb05d' # Green
+dir:               '#b185db' # Purple
 
 # Link
-dead_link: red
-link:      cyan
+dead_link: '#f65b5b'         # Red
+link:      '#51a39f'         # Cyan
 
-# special files
-socket:    green
-blockdev:  green
-chardev:   green
+# Special Files
+socket:    '#8dc776'         # Green
+blockdev:  '#8dc776'         # Green
+chardev:   '#8dc776'         # Green
 
 # Access Modes
-write:     yellow
-read:      green
-exec:      red
-no_access: indianred
+write:     '#bb8fe5'         # Pink
+read:      '#b185db'         # Purple
+exec:      '#51a39f'         # Cyan
+no_access: '#c26f6f'         # Red
 
 # Age
-day_old:     mediumspringgreen
-hour_old:    sandybrown
-no_modifier: seagreen
+hour_old:    '#cecece'       # Bright white
+day_old:     '#6cbad1'       # Bright blue
+no_modifier: '#cecece'       # Bright white
 
 # File Size
-file_large:  orange
-file_medium: gold
-file_small:  peachpuff
+file_large:  '#f65b5b'       # Red
+file_medium: '#e7ac7e'       # Orange
+file_small:  '#6bb05d'       # Green
 
 # Random
-report: white
-user:   moccasin
-tree:   cyan
-empty:  yellow
-error:  red
-normal: darkkhaki
+report: '#8dc776'            # Green
+user:   '#6db0ad'            # Cyan
+tree:   '#e59e67'            # Yellow
+empty:  '#232a2c'            # Bright black
+error:  '#c26f6f'            # Red
+normal: '#c5c8c9'            # Foreground
 
 # Git
-addition:     chartreuse
-modification: darkkhaki
-deletion:     darkred
-untracked:    darkorange
-unchanged:    forestgreen
+addition:     '#51a39f'      # Cyan
+modification: '#e7ac7e'      # Yellow
+deletion:     '#c26f6f'      # Red
+untracked:    '#e59e67'      # Orange
+unchanged:    '#8dc776'      # Green
