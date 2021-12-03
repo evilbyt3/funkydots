@@ -1,15 +1,15 @@
-# FunkyDots
+# 🍙 FunkyDots
 Another portable Arch based system made with love & style. It integrates my desired digital environment.
 
-![showcase img](./res/pic2.png)
-![showcase img](./res/pic3.png)
+![showcase img](./.local/share/funkydots/pix/pic2.png)
+![showcase img](./.local/share/funkydots/pix/pic3.png)
 
 ## Some Info
 - It also serves as:
   - A learning resource for anyone who wants to customize their environment & learn more about ricing *(e.g conf files, scripts)*
   - A backup for myself in case anything goes wrong
   - An easy & quick way to quickly port my system to another machine
-- Check out [my programs]() note to see what's coming with this setup
+- Check out [my programs](https://github.com/vlagh3/funkydots/blob/main/.local/share/funkydots/progs.md) note to see what's coming with this setup
 - This setup would have not been possible without the help of the greatly genereous open-source community. So I encorouge you to take a look at [those projects](#inspiration--kudos) & show some love *(don't be just a taker)*
 
 ### Structure
