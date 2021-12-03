@@ -66,9 +66,9 @@ sudo bash larbs.sh
 ```
 
 ### Tips & Tricks
-- use a url shortener for downloading the scripts *(e.g [git.io](https://git.io/))*
+- use an url shortener for downloading the scripts *(e.g [git.io](https://git.io/))*
 - be sure that the initialization script *([alis.conf](https://github.com/vlagh3/alis/blob/master/alis.conf))* is configured properly for your system
-- if you want a minimal install change pass the `-p` option to [larbs](https://larbs.xyz/) with the [progs_min.csv file](https://github.com/vlagh3/funkydots/blob/main/.local/share/init_install/progs_min.csv) or your custom one
+- if you want a minimal install pass the `-p` option to [larbs](https://larbs.xyz/) with the [progs_min.csv file](https://github.com/vlagh3/funkydots/blob/main/.local/share/init_install/progs_min.csv) or your custom one
 
 ## Inspiration & Kudos
 Grazie
