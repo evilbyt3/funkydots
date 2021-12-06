@@ -53,3 +53,4 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Cleanup
 [ -f "$HOME/larbs.sh" ] && rm $HOME/larbs.sh
+fc-cache -fv
