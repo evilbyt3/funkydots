@@ -11,7 +11,8 @@ putgitbarerepo() { # Initialize git bare repo for dotfiles
     echo "Checked out config.";
     else
       echo "Backing up pre-existing dot files.";
-      config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .config-backup/
+      mkdir $HOME/.config-backup && \
+        config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .config-backup/
   fi;
   config checkout
   config config status.showUntrackedFiles no
@@ -44,8 +45,8 @@ git clone https://github.com/tmux-plugins/tpm "${XDG_DATA_HOME:-$HOME/.local/sha
 nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
 
 # Install rustup 4 eww
-# curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-# rustup install nightly
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+#rustup install nightly
 
 # eww
 # git clone https://github.com/elkowar/eww && cd eww && cargo build --release && cp target/releases/eww ~/.local/bin/system/
