@@ -1,8 +1,14 @@
 # 🍙 FunkyDots
 Another portable Arch based system made with love & style. It integrates my desired digital environment.
 
-![showcase img](./.local/share/funkydots/pix/pic2.png)
-![showcase img](./.local/share/funkydots/pix/pic3.png)
+**uwu**
+![showcase img](./.local/share/funkydots/pix/uwu/pic2.png)
+![showcase img](./.local/share/funkydots/pix/uwu/pic3.png)
+![showcase img](./.local/share/funkydots/pix/uwu/pic4.png)
+
+**cyber**
+![showcase img](./.local/share/funkydots/pix/cyber/pic1.png)
+![showcase img](./.local/share/funkydots/pix/cyber/pic4.png)
 
 ## Some Info
 - It also serves as:
