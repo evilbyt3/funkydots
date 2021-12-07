@@ -59,6 +59,7 @@
 ### Programs
 | key                | do                                                                                                                                            |
 | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| mod + Enter        | spawn terminal                                                                                                                                |
 | mod + p            | password manager                                                                                                                              |
 | mod + shift + b    | spawn `$BROWSER` *(e.g brave)*                                                                                                                |
 | mod + ctrl + b     | open bookmark manager                                                                                                                         |
