@@ -72,6 +72,8 @@ curl -s https://raw.githubusercontent.com/vlagh3/funkydots/main/.local/share/ini
 sudo bash larbs.sh
 ```
 
+OR just `git clone https://github.com/vlagh3/funkydots.git` and move everything in your `$HOME`
+
 ### Tips & Tricks
 - use an url shortener for downloading the scripts *(e.g [git.io](https://git.io/))*
 - be sure that the initialization script *([alis.conf](https://github.com/vlagh3/alis/blob/master/alis.conf))* is configured properly for your system
