@@ -16,6 +16,7 @@ Another portable Arch based system made with love & style. It integrates my desi
   - A backup for myself in case anything goes wrong
   - An easy & quick way to quickly port my system to another machine
 - Check out [my programs](https://github.com/vlagh3/funkydots/blob/main/.local/share/funkydots/progs.md) note to see what's coming with this setup
+- To get your way around the system, see [my keybinds](./.local/share/funkydots/keybinds.md) *(feel free to change them as you please)*
 - This setup would have not been possible without the help of the greatly genereous open-source community. So I encorouge you to take a look at [those projects](#inspiration--kudos) & show some love *(don't be just a taker)*
 
 ### Structure
