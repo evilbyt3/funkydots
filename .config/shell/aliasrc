@@ -60,6 +60,7 @@ abbrev-alias dp="dtf push"
 
 # other
 abbrev-alias z="zathura" 
+abbrev-alias b="buku"
 abbrev-alias weath="curl wttr.in"
 abbrev-alias j="jrnl"
 alias mirr="wget -mkEpnp "

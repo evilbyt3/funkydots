@@ -1,11 +1,13 @@
 # You can add comments to these files with #
+gA   $HOME/areas
 gP   $HOME/proj
-gH   $HOME/archive
+gH   $HOME/arh
 gR   $HOME/res
 
 gC   ${XDG_CONFIG_HOME:-$HOME/.config}
 gS   ${XDG_SCRIPTS_DIR:-$HOME/.local/bin}
-gsh  ${XDG_DATA_HOME:-$HOME/.local/share}
+gL   ${XDG_DATA_HOME:-$HOME/.local}
+gls  ${XDG_DATA_HOME:-$HOME/.local/share}
 gcac ${XDG_CACHE_HOME:-$HOME/.cache}
 
 gmn  /mnt
