@@ -17,4 +17,5 @@ fi
 # exec i3
 
 # dwm
-ssh-agent dwm
+#ssh-agent dwm
+exec dwm
