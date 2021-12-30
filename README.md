@@ -17,7 +17,7 @@ Another portable Arch based system made with love & style. It integrates my desi
   - An easy & quick way to quickly port my system to another machine
 - Check out [my programs](https://github.com/vlagh3/funkydots/blob/main/.local/share/funkydots/progs.md) note to see what's coming with this setup
 - To get your way around the system, see [my keybinds](./.local/share/funkydots/keybinds.md) *(feel free to change them as you please)*
-- This setup would have not been possible without the help of the greatly genereous open-source community. So I encorouge you to take a look at [those projects](#inspiration--kudos) & show some love *(don't be just a taker)*
+- This setup would have not been possible without the help of the greatly genereous open-source community. So I encourage you to take a look at [those projects](#inspiration--kudos) & show some love *(don't be just a taker)*
 
 ### Structure
 I try to keep things as organized & clean as I possibly can. Thus, I follow the [XDG Base Directory Specification](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html) to structure my `~` directory. Below is a summary:
@@ -49,7 +49,7 @@ I try to keep things as organized & clean as I possibly can. Thus, I follow the 
 | [dawn fork](https://github.com/vlagh3/dawn)      | a gracius custom startpage                                                        | 
 
 ### Dot-files management
-There are multiple ways to manage your dotfiles as seen in numerous articles. I would definitely recommend to go through these resources and find the one that suits you the best:
+There are multiple ways to manage your dotfiles as seen in numerous articles. I would definitely recommend going through these resources and find the one that suits you the best:
 - https://dotfiles.github.io/
 - https://hackernoon.com/learn-how-to-manage-dotfiles-b8b62c6c5491
 - https://stackoverflow.com/questions/16292409/how-to-use-github-to-manage-dotfiles
@@ -107,4 +107,4 @@ Grazie
 
 
 ## License
-The files and scripts in this repository are licensed under the BS License, which is a permissive license allowing you to use, modify, copy & distribute the software. An important step in accepting to use this licence is to firstly read it & think by your own. If not, you agree to sell your soul to the devil while giving me 1.000.000$. (Also known as the BullShit License)
+The files and scripts in this repository are licensed under the BS License, which is a permissive license allowing you to use, modify, copy & distribute the software. An important step in accepting to use this licence is to firstly read it & think by your own. If not, you agree to sell your soul to the devil while giving me 1.000.000$. (Also known as the BulShit License)
