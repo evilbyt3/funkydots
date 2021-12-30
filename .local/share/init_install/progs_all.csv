@@ -81,6 +81,7 @@
 ,conky,"system monitoring utility"
 ,rofi-emoji,"emoji selector plugin for Rofi that copies the selected emoji to the clipboard"
 ,urlscan,"browse the URLs from a terminal"
+,man-pages,"linux man pages"
 A,rxfetch,"custom system info fetching tool"
 A,dijo,"minimal CLI habit tracker"
 A,pomotroid-bin,"simple & comfy pomodoro timer"
