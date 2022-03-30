@@ -33,7 +33,7 @@ I try to keep things as organized & clean as I possibly can. Thus, I follow the 
   ├── src		# mostly suckless utils (e.g dwm, dwmblocks)
 ```
 - To change the file & directory navigation shortcuts, modify the [dirnav](https://github.com/vlagh3/funkydots/blob/main/.config/shell/dirnav) & [filenav](https://github.com/vlagh3/funkydots/blob/main/.config/shell/filenav) files
-  - loaded by the [shortucts](https://github.com/vlagh3/scripties/blob/master/system/shortcuts.sh) scripts on [zsh]() startup
+  - loaded by the [shortucts](https://github.com/vlagh3/scripties/blob/master/system/shortcuts.sh) script on [zsh](https://www.zsh.org/) startup
 - `.profile`, `.zprofile` is linked to the `.config/shell` directory
 - `.xprofile`, `.xinitrc` is linked to the `.config/x11` directory
 - The loading of environment variables happens in [shell/profile](https://github.com/vlagh3/funkydots/blob/main/.config/shell/profile)
