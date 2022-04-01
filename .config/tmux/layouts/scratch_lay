@@ -38,11 +38,11 @@ send-keys -t "muz" "clear; ncmpcpp" Enter v
 neww -n "tasks"
 # next tasks @ context
 splitw -t "tasks" -h -l 45%
-send-keys -t "tasks" "while true; do clear && task due:tom or +OVERDUE lim:4; sleep 5; done" Enter
+send-keys -t "tasks" "while true; do clear && task in lim:4; sleep 5; done" Enter
 
 # inbox based on context
 splitw -t "tasks" -v -l 80%
-send-keys -t "tasks" "while true; do clear && task +milestone or +project lim:2; sleep 5; done" Enter
+send-keys -t "tasks" "while true; do clear && task next lim:3; sleep 5; done" Enter
 
 # burndown.daily report
 splitw -t "tasks" -v -l 60%
