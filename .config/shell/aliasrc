@@ -66,35 +66,31 @@ abbrev-alias j="jrnl"
 alias mirr="wget -mkEpnp "
 
 ## tasks
-### inbox stuff
 alias in="task add +in"
 tickle () {
-    deadline=$1
-    shift
-    in +tickle wait:$deadline $@
+  deadline=$1
+  shift
+  in +tickle wait:$deadline $@
 }
 webpage_title(){
-	wget -qO- "$*" | hxnormalize -x | hxselect -s '\n' 'title' | sed 's/<\/\?[^>]\+>//g' 2>/dev/null
+  wget -qO- "$*" | hxnormalize -x | hxselect -s '\n' 'title' | sed 's/<\/\?[^>]\+>//g' 2>/dev/null
 }
 read_and_review (){
-	link="$1"
-	title=$(webpage_title $link)
-	echo $title
-	descr="\"Read and review: $title\""
-	# TODO: Maybe get current context & do pro:$con.reading
-	id=$(task add +rnr "$descr" | sed -n 's/Created task \(.*\)./\1/p')
-	task "$id" annotate "$link" "${@:2}"
-}
-think_it_over () {
-	task "$1" mod +tickle wait:$2
+  link="$1"
+  title=$(webpage_title $link)
+  echo $title
+  descr="\"Read and review: $title\""
+  id=$(task add +rnr "$descr" | sed -n 's/Created task \(.*\)./\1/p')
+  task "$id" annotate "$link" "${@:2}"
 }
 
 
+alias rnd='task add +rnd +next' # research: looking into something
 alias tick=tickle
 alias rnr=read_and_review
-alias think=think_it_over
 
 
 ### fast but not furious
 abbrev-alias t="task"
-abbrev-alias tp="task projects"
+abbrev-alias tp="task pro:"
+abbrev-alias ta="task add \""
