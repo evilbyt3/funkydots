@@ -2,12 +2,6 @@
 # website: <>
 # -------
 
-# Added features:
-#
-
-# Workflow
-
-
 # For more documentation, see http://taskwarrior.org or try 'man task', 'man task-color',
 # 'man task-sync' or 'man taskrc'
 
@@ -32,10 +26,12 @@
 #include /usr/share/doc/task/rc/solarized-dark-256.theme
 #include /usr/share/doc/task/rc/solarized-light-256.theme
 #include /usr/share/doc/task/rc/no-color.theme
+color.blocking=magenta on color16
 
 # -- Setup -- 
-#default.project=in                  # add task to inbox by default
-data.location=~/.local/share/task   # change data location
+#default.project=in                     # add task to inbox by default
+data.location=~/.local/share/task       # change data location
+#data.location=~/.local/share/old_task       # change data location
 verbose=blank,footnote,label,new-id,affected,edit,special,project,sync,unwait
 
 # Style
@@ -49,25 +45,13 @@ weekstart=Monday
 search.case.sensitive=no
 
 
-# -- Contexts -- 
-# https://taskwarrior.org/docs/context.html
-context.home=pro:home                   # home stuff 
-context.work=pro:work                   # deep work sessions
-context.uni=(pro:uni or +rnr)           # learning space
-context.studio=pro:studio               # content creation
 
 
 # -- Urgency -- 
 # https://taskwarrior.org/docs/urgency.html
-
-# next 
-# inbox
-# due stuff
-# someday
-
-urgency.user.tag.in.coefficient=15.0                # inbox item means high urgency
-urgency.user.tag.next.coefficient=25.0              # next items are thee first ones
+urgency.user.tag.next.coefficient=25.0              # next items are the first ones
 urgency.due.coefficient=20.0                        # give more priority to tasks with due dates (default: 12.0)
+urgency.user.tag.in.coefficient=15.0                # inbox item means high urgency
 
 
 
@@ -79,11 +63,17 @@ report.in.filter            = status:pending limit:page (+in)
 report.in.labels            = ID,Context,Description
 
 # Sort the columns a little differently for the next report
-report.next.filter=+PENDING limit:20
-report.next.labels=ID,Age,Project,Due,Description,Why,Reward,Urg
-report.next.columns=id,entry.age,project,due.relative,description,why,reward,urgency
+report.next.filter=+PENDING limit:20 -in
+report.next.labels=ID,Age,Project,Due,Description,Urg
+report.next.columns=id,entry.age,project,due.relative,description,urgency
+#report.next.context=0          # ignore currently active contexts
 
-# TODO: Habit reports
+
+# Reviews
+report._reviewed.description=Tasksh review report.  Adjust the filter to your needs.
+report._reviewed.columns=uuid
+report._reviewed.sort=reviewed+,modified+
+report._reviewed.filter=( reviewed.none: or reviewed.before:now-6days ) and ( +PENDING or +WAITING )
 
 
 # -- Aliases -- 
@@ -93,10 +83,22 @@ alias.dailystatus=status:completed end.after:today all
 
 # -- Udas -- 
 # https://taskwarrior.org/docs/udas.html
-uda.why.type=string
-uda.why.label=why
+# uda.why.type=string
+# uda.why.label=why
+# 
+# uda.reward.type=string
+# uda.reward.label=reward
+uda.reviewed.type=date
+uda.reviewed.label=Reviewed
 
-uda.reward.type=string
-uda.reward.label=reward
 
+# -- Contexts -- 
+# https://taskwarrior.org/docs/context.html
 #context=work
+context.studio.read=pro:stud
+context.studio.write=pro:stud
+context.sec.read=pro:sec
+context.sec.write=pro:sec
+context.buss.read=pro:buss
+context.buss.write=pro:buss
+news.version=2.6.0
