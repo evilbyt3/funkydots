@@ -42,7 +42,6 @@ I try to keep things as organized & clean as I possibly can. Thus, I follow the 
 
 |                                                  |                                                                                   |
 | ------------------------------------------------ | --------------------------------------------------------------------------------- |
-| [NVChad fork](https://github.com/vlagh3/NvChad)  | an awesome attempt to configure neovim as a modern IDE                            |
 | [chadwm fork](https://github.com/vlagh3/chadwm)  | dwm as beautiful as possible                                                      |
 | [scripties](https://github.com/vlagh3/scripties) | custom bash scripts + other usefull stuff collected *(e.g sec, devops, sysadmin)* |
 | [alis fork](https://github.com/vlagh3/alis)      | arch linux install script                                                         |
