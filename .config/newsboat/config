@@ -22,7 +22,7 @@ bind-key U show-urls
 bind-key x pb-delete
 
 color listnormal cyan default
-color listfocus black yellow standout bold
+color listfocus black yellow standout
 color listnormal_unread blue default
 color listfocus_unread yellow default bold
 color info red black bold
