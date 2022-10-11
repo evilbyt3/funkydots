@@ -415,29 +415,21 @@
 #
 # ==== COLORS ====
 #
-# uwu theme
+
+# cyber theme
 [urgency_low]
-    # IMPORTANT: colors have to be defined in quotation marks.
-    # Otherwise the "#" and following would be interpreted as a comment.
-    # background = "#131a1c"
-    background = "#232a2c"
-    foreground = "#c5c8c9"
-    timeout = 10
-    # Icon for notifications with low urgency, uncomment to enable
-    #new_icon = /path/to/icon
+  background = "#000000"
+  foreground = "#00ff9f"
+  timeout = 10
 
 [urgency_normal]
-    background = "#131a1c"
-    foreground = "#8dc776"
-    frame_color = "#6bb05d"
-    timeout = 10
-    # Icon for notifications with normal urgency, uncomment to enable
-    #new_icon = /path/to/icon
+  background = "#000000"
+  foreground = "#00ff9f"
+  frame_color = "#7d314e"
+  timeout = 15
 
 [urgency_critical]
-    background = "#131a1c"
-    foreground = "#f65b5b"
-    frame_color = "#ff5555"
-    timeout = 0
-    # Icon for notifications with critical urgency, uncomment to enable
-    #new_icon = /path/to/icon
+  background = "#000000"
+  foreground = "#ffffff"
+  frame_color = "#ff0000"
+  timeout = 0
