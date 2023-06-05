@@ -21,6 +21,15 @@ putgitbarerepo() { # Initialize git bare repo for dotfiles
 dotfilesrepo="$1"
 [ -z "$dotfilesrepo" ] && dotfilesrepo="https://github.com/vlagh3/funkydots"
 
+
+# chadwm build
+cd ~/.config/chadwm/chadwm/ && make clean && make install
+
+# Setup catpuccin rofi
+cd /tmp && git clone https://github.com/catppuccin/rofi && cd rofi && cp -r * ~/.config/rofi
+# TODO: change font with sed to ProggyClean Nerd Font
+
+
 # Set the ZSH env if it's not already set
 if [ -z ${ZSH} ]; then
     export ZSH="${XDG_CONFIG_HOME:-$HOME/.local/share}/oh_my_zsh"
@@ -40,6 +49,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH:-$HOME/
 
 # Install tmux plugin manager
 git clone https://github.com/tmux-plugins/tpm "${XDG_DATA_HOME:-$HOME/.local/share}/tmux/tpm"
+
 
 # nvchad init
 nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
