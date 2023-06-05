@@ -1,3 +1,4 @@
+# +
 [submodule ".local/bin"]
 	path = .local/bin
 	url = https://github.com/vlagh3/scripties.git
@@ -7,6 +8,6 @@
 [submodule ".local/share/startupB"]
 	path = .local/share/startupB
   url = https://github.com/vlagh3/dawn.git
-[submodule "chadwm"]
+[submodule ".config/chadwm"]
 	path = .config/chadwm
 	url = https://github.com/evilbyt3/chadwm.git
