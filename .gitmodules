@@ -6,4 +6,7 @@
 	url = https://github.com/vlagh3/alis.git
 [submodule ".local/share/startupB"]
 	path = .local/share/startupB
-        url = https://github.com/vlagh3/dawn.git
+  url = https://github.com/vlagh3/dawn.git
+[submodule "chadwm"]
+	path = .config/chadwm
+	url = https://github.com/evilbyt3/chadwm.git
