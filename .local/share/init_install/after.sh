@@ -43,14 +43,14 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 [ -f "$HOME/.zshrc" ] && rm $HOME/.zshrc
 
 # Setup bare repo
-putgitbarerepo "$dotfilesrepo"
+# putgitbarerepo "$dotfilesrepo"
 
 # Install required plugins (syntax highlighting)
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH:-$HOME/.local/share/oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # Install tmux plugin manager
-git clone https://github.com/tmux-plugins/tpm "${XDG_DATA_HOME:-$HOME/.local/share}/tmux/tpm"
-
+# git clone https://github.com/tmux-plugins/tpm "${XDG_DATA_HOME:-$HOME/.local/share}/tmux/tpm"
+git clone https://github.com/tmux-plugins/tpm "$HOME/.config/tmux/plugins/tpm"
 
 # nvchad init
 nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
