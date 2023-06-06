@@ -32,7 +32,7 @@ GPG_TTY=$(tty)
 export GPG_TTY
 
 # -- OH_MY_ZSH --
-ZSH_THEME="agnoster" # TODO: shorten path segment in this theme
+ZSH_THEME="rkj-repos"
 plugins=(git zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
