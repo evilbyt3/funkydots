@@ -686,7 +686,10 @@ schemes:
 # *cyber
 # *uwu
 
-colors: *cyber
+#colors: *cyber
+import:
+  - ~/.config/alacritty/themes/catppuccin-mocha.yml
+
 
 #######################################
 ##       END OF COLOR SCHEMES        ##
