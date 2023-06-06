@@ -53,7 +53,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH:-$HOME/
 git clone https://github.com/tmux-plugins/tpm "$HOME/.config/tmux/plugins/tpm"
 
 # nvchad init
-nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+#nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
 
 # Install rustup 4 eww
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
