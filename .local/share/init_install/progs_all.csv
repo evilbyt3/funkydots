@@ -3,6 +3,7 @@
 ,xorg-xwininfo,"allows querying information about windows."
 ,xorg-xinit,"starts the graphical server."
 ,qalculate-gtk,"calculator"
+,dash,"needed 4 bar.sh"
 ,pavucontrol,"front end for pulse"
 ,xorg-xprop,"is a tool for detecting window properties."
 ,arandr,"allows the user to customize monitor arrangements."

@@ -25,7 +25,7 @@ dotfilesrepo="$1"
 touch "$HOME/.Xresources"
 
 # chadwm build
-cd "$HOME/.config/chadwm/chadwm/" && sudo make clean && sudo make install && cd "$HOME"
+cd "$HOME/.config/chadwm/chadwm/" && sudo -S make clean && sudo make install && cd "$HOME"
 
 # Setup catpuccin rofi
 mkdir -p "$HOME/.config/rofi" && git clone https://github.com/catppuccin/rofi /tmp/rofi && cp -r /tmp/rofi/deathemonic/* "$HOME/.config/rofi" && rm -r /tmp/rofi
