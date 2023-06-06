@@ -55,4 +55,3 @@ send-keys -t "muz" "clear; ncmpcpp" Enter v
 #         \ workspace \
 # +-------------+--------------+
 neww -n "wkspace"
-send-keys "lf" Enter
