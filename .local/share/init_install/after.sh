@@ -21,16 +21,14 @@ putgitbarerepo() { # Initialize git bare repo for dotfiles
 dotfilesrepo="$1"
 [ -z "$dotfilesrepo" ] && dotfilesrepo="https://github.com/evilbyt3/funkydots"
 
-MAIN_USER="$(users)"
-
 # Add .Xresources if doesn't exist
-touch "/home/$MAIN_USER/.Xresources"
+touch "~/.Xresources"
 
 # chadwm build
-cd "/home/$MAIN_USER/.config/chadwm/chadwm/" && make clean && make install
+cd "~/.config/chadwm/chadwm/" && sudo make clean && sudo make install
 
 # Setup catpuccin rofi
-mkdir -p "/home/$MAIN_USER/.config/rofi" && cd /tmp && git clone https://github.com/catppuccin/rofi && cd rofi/deathemonic && cp -r * "/home/$MAIN_USER/.config/rofi" && rm -r /tmp/rofi
+mkdir -p "~/.config/rofi" && cd /tmp && git clone https://github.com/catppuccin/rofi && cd rofi/deathemonic && cp -r * "~/.config/rofi" && rm -r /tmp/rofi
 # TODO: change font with sed to ProggyClean Nerd Font
 
 # Set the ZSH env if it's not already set
