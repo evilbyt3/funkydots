@@ -22,13 +22,13 @@ dotfilesrepo="$1"
 [ -z "$dotfilesrepo" ] && dotfilesrepo="https://github.com/evilbyt3/funkydots"
 
 # Add .Xresources if doesn't exist
-touch "~/.Xresources"
+touch "$HOME/.Xresources"
 
 # chadwm build
-cd "~/.config/chadwm/chadwm/" && sudo make clean && sudo make install
+cd "$HOME/.config/chadwm/chadwm/" && sudo make clean && sudo make install && cd "$HOME"
 
 # Setup catpuccin rofi
-mkdir -p "~/.config/rofi" && cd /tmp && git clone https://github.com/catppuccin/rofi && cd rofi/deathemonic && cp -r * "~/.config/rofi" && rm -r /tmp/rofi
+mkdir -p "$HOME/.config/rofi" && git clone https://github.com/catppuccin/rofi /tmp/rofi && cp -r /tmp/rofi/deathemonic/* "$HOME/.config/rofi" && rm -r /tmp/rofi
 # TODO: change font with sed to ProggyClean Nerd Font
 
 # Set the ZSH env if it's not already set
